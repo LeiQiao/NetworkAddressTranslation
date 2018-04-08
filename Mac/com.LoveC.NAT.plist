@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.LoveC.NAT</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/curl</string>
+		<string>-X</string>
+		<string>POST</string>
+		<string>--user</string>
+		<string>abc:123</string>
+		<string>http://www.doomga.com/nat</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StartInterval</key>
+	<integer>600</integer>
+	<key>StandardErrorPath</key>
+	<string>/tmp/nat.log</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/nat.log</string>
+</dict>
+</plist>

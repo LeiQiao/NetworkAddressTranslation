@@ -11,6 +11,8 @@ auth = HTTPBasicAuth()
 def verify_token(user, password):
     g.user = ''.join(re.findall(re.compile('\w+'), user))
     g.password = ''.join(re.findall(re.compile('\w+'), password))
+    if len(g.user) == 0 or len(g.password) == 0:
+        return False
     return True
 
 
